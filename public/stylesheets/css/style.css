@@ -1,3 +1,16 @@
+html,
+body,
+header,
+.view {
+  height: 100%;
+  width: 100%;
+}.intro-2 {
+	background: url("../image/sackcloth-sackcloth-textured-laptop-ipad-163143.jpeg") no-repeat center center;
+	position: relative;
+    background-size: cover;
+}
+
+
 .news-section{
     border-radius: 10px; 
     border: 1px solid #b3b3b3;
