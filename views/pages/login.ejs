@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <%- include('../Navs/html') %>
+
+<body>
+    <%- include('../Navs/navbar') %>
+    <div class="container">
+            <div class="col-md-12 d-flex align-item-center justify-content-center" style="margin-top:50px;">
+              <div class="container mx-auto d-flex justify-content-center m-5">
+          
+            <form class="text-center border border-light p-5">
+          
+                    <p class="h4 mb-4 md-5"style="font-size:30px;" >SIGN IN</p>
+                    <input type="email" id="defaultLoginFormEmail" class="form-control mb-4 p-4" placeholder="E-mail">
+                    <input type="password" id="defaultLoginFormPassword" class="form-control mb-4 p-4" placeholder="Password">
+                  
+                    <div class="d-flex justify-content-around">
+                        <div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="defaultLoginFormRemember">
+                                <label class="custom-control-label" for="defaultLoginFormRemember">Remember me</label>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="" class="ml-5">Forgot password?</a>
+                        </div>
+                    </div>
+                    <button class="btn btn-blue btn-block my-4" type="submit">Sign in</button>
+                  
+                    <p>Not a member?
+                        <a href="/signup">Register</a>
+                    </p>
+          </form>
+         
+              </div>
+            </div>
+    </div>
+
+<%- include('../Navs/footer') %>

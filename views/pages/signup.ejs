@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <%- include('../Navs/html') %>
+
+<body>
+    
+    <%- include('../Navs/navbar') %>
+    <div class="container">
+      <div class="container mx-auto d-flex justify-content-center m-5">
+      <form class="text-center border border-light p-3" action="/error" method="GET"  style="margin-top:50px;">
+      
+          <p class="h1 mb-4">Sign up</p>
+      
+          <div class="form-row mb-4">
+              <div class="col">
+                  <input type="text" id="defaultRegisterFormFirstName" name="first" class="form-control h3 p-4" placeholder="First name">
+              </div>
+              <div class="col">
+                  <input type="text" id="defaultRegisterFormLastName" name="last" class="form-control h3 p-4" placeholder="Last name">
+              </div>
+          </div>
+          <input type="email" id="defaultRegisterFormEmail" name="email" class="form-control h3 mb-4 p-4" placeholder="E-mail">
+          <input type="password" id="defaultRegisterFormPassword" name="password" class="form-control h3 p-4" placeholder="Password" aria-describedby="defaultRegisterFormPasswordHelpBlock">
+          <small id="defaultRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4">
+              At least 8 characters and 1 digit
+          </small>
+      
+          <input type="text" id="defaultRegisterPhonePassword" name="number" class="form-control h3 p-4" placeholder="Phone number" aria-describedby="defaultRegisterFormPhoneHelpBlock">
+          <small id="defaultRegisterFormPhoneHelpBlock" class="form-text text-muted mb-4">
+              Optional - for two step authentication
+          </small>
+          <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="defaultRegisterFormNewsletter">
+              <label class="custom-control-label" for="defaultRegisterFormNewsletter">Subscribe to our newsletter</label>
+          <button class="btn btn-blue my-4 btn-block" type="submit">Sign in</button>
+          <p>Already have an account? <a href="/login">Login</a></p>
+          <hr>
+          <p>By clicking
+              <em>Sign up</em> you agree to our
+              <a href="#" target="_blank">terms of service</a> 
+              
+      
+      </form>
+      </div>
+    </div>
+  </div>
+
+<%- include('../Navs/footer') %>
