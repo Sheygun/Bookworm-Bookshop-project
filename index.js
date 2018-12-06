@@ -30,12 +30,16 @@ express()
 
 
   .get('/', (req, res) => res.render('pages/index'))
-  .get('/page1', (req, res) => res.render('pages/page1'))
+  .get('/motivational', (req, res) => res.render('books/motivational'))
+  .get('/educational', (req, res) => res.render('books/educational'))
+  .get('/financial', (req, res) => res.render('books/financial'))
+  .get('/others', (req, res) => res.render('books/others'))
+
   .get('/about', (req, res) => res.render('pages/about'))
   .get('/contact', (req, res) => res.render('pages/contact'))
   .get('/policy', (req, res) => res.render('pages/policy'))
-  .get('/login', (req, res) => res.render('pages/login'))
-  .get('/signup', (req, res) => res.render('pages/signup'))
+  .get('/cart', (req, res) => res.render('pages/cart'))
+
   .get('/error', (req, res, next) => res.render('pages/unprocessed'))
 
   
