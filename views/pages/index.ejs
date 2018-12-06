@@ -53,7 +53,7 @@
                                         </tbody>
                                         <tbody>
                                          <tr>
-                                            <td><h1 class="text-center">#2,599.99</h1></td>
+                                            <td><h1 class="text-center" id="new-prize">#2,599.99</h1></td>
                                            <td><h3 class="red-text">New prize</h3></td>
                                          </tr>
                                         </tbody>
@@ -70,7 +70,7 @@
 
                          <div class="m-3">
                            <!-- <a href=""> -->
-                             <button class="btn btn-red btn-block" id="pay-button" ><span class="h1" id="buy-now">BUY NOW</span></button>
+                             <button class="btn btn-block" id="pay-button" style="background:red; color:white;" ><span class="h1" id="buy-now">BUY NOW</span></button>
                            <!-- </a> -->
                          </div>
 
@@ -609,32 +609,60 @@
 
   
 
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" 
-       aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
        <div class="modal-dialog">
           <div class="modal-content">
              <div class="modal-header">
-                <button type="button" class="close" 
-                   data-dismiss="modal" aria-hidden="true">
-                      &times;
-                </button>
-                <h4 class="modal-title" id="myModalLabel">
-                   This Modal title
-                </h4>
+                <h1 class="text-center">YOUR CART</h1>
+                <button type="button" class="close" style="font-size: 40px;" data-dismiss="modal" aria-hidden="true"> &times; </button>
              </div>
+
+
+             
              <div class="modal-body">
-                Add some text here
+                <div class="table-responsive">
+                    <table class="table">
+                       <!-- <caption>Responsive Table Layout</caption> -->
+                       <thead>
+                          <tr>
+                             <th style="font-size: 18px;">S/N</th>
+                             <th style="font-size: 18px;">BOOKS</th>
+                             <th style="font-size: 18px;">PRICE</th>
+                             <th style="font-size: 18px;">QUANTITY</th>
+                          </tr>
+                       </thead>
+                       <tbody>
+                          <tr>
+                             <td class="h5" id="serialNumber"></td>
+                             <td class="h5" id="book-name"></td>
+                             <td class="h5" id="book-prize"></td>
+                             <td>
+                                <select class="form-control" id="book-qty" style="visibility:hidden">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                 </select>
+                             </td>
+                          </tr>
+                         
+                       </tbody>
+                    </table>
+                 </div>  
              </div>
+
+
+
              <div class="modal-footer">
-                <button type="button" class="btn btn-default" 
-                   data-dismiss="modal">Close
+                <button type="button" class="btn btn-default btn-lg" data-dismiss="modal">Close
                 </button>
-                <button type="button" class="btn btn-primary">
-                   Submit changes
+                <button type="button" class="btn btn-primary btn-lg">
+                   Pay now
                 </button>
              </div>
           </div>
-    </div>
+        </div>
     </div>
 
 

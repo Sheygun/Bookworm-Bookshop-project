@@ -4,6 +4,7 @@ $(document).ready(function(){
 
 
 let x = 0;
+let serial = 0;
 
 let pays = document.getElementById('pay-button');
 pays.onclick = function(){
@@ -15,6 +16,14 @@ pays.onclick = function(){
    pays.onclick= function(){
        alert("item is currently pending");
    }
+   serial++;
+   let newPrize = document.getElementById('new-prize').innerHTML;
+
+document.getElementById('serialNumber').innerHTML = serial;
+document.getElementById('book-prize').innerHTML = newPrize;
+document.getElementById('book-name').innerHTML = bookName;
+document.getElementById('book-qty').style.visibility="visible";
+this.style.backgroundColor = "green";
 
 } 
 
